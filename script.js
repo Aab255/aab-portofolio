@@ -19,13 +19,6 @@ const observer = new IntersectionObserver(entries => {
 
 elements.forEach(el => observer.observe(el));
 
-// Typing effect
-const typingElement = document.querySelector('.typing');
-const texts = [
-  "Professional",
-  "Designer",
-  "Administrator",
-];
 
 let index = 0;
 let charIndex = 0;
@@ -78,4 +71,26 @@ window.addEventListener('scroll', () => {
   } else {
     header.classList.remove("scrolled");
   }
+});
+document.addEventListener("DOMContentLoaded", () => {
+
+  const roles = ["Professional", "Designer", "Administrator"];
+  let roleIndex = 0;
+
+  function changeRole() {
+    const roleElement = document.getElementById("role");
+    if (!roleElement) return; // kalau belum ada, jangan crash
+
+    roleElement.classList.remove("fade-role");
+
+    setTimeout(() => {
+      roleElement.textContent = roles[roleIndex];
+      roleElement.classList.add("fade-role");
+
+      roleIndex = (roleIndex + 1) % roles.length;
+    }, 200);
+  }
+
+  setInterval(changeRole, 2000);
+  changeRole();
 });
