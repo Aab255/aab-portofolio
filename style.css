@@ -85,7 +85,7 @@ main {
 .profile-info h3 {
   font-weight: 300;
   color: #aee1f9;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .profile-info p {
@@ -802,3 +802,4 @@ footer p:hover {
   margin-bottom: 100px; /* jarak ke bawah */
   display: block; 
 }
+
