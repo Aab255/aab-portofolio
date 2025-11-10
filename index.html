@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Pribadi | Abdul Rahman Yusup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="premium-header">
+  <a href="#home" class="logo-area">
+    <img src="logoo.svg" class="logo-img" alt="Logo">
+    <span class="logo-text">Abdul Rahman Yusup</span>
+  </a>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+<nav id="navbar">
+  <a href="#home">Beranda</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Kontak</a>
+</nav>
+</header>
+
+
+<main>
+  <div id="home" class="profile-card fade-in">
+    <div class="profile-img">
+  <img src="profile.jpeg" alt="Foto Profil">
+</div>
+    <div class="profile-info">
+      <h1>Abdul Rahman Yusup</h1>
+      <h3 class="typing"></h3>
+ <p class="intro-text">
+  Halo! Saya <span class="highlight">Abdul Rahman Yusup</span>, berkarier di dunia administrasi.
+</p>
+<p class="intro-text">
+  Memiliki banyak pengalaman di dunia pendidikan dan siap berkontribusi secara profesional.
+</p>
+	  <p>Skill bisa dilihat pada menu 
+  <a href="#skills" class="skill-link">Skill</a>
+</p>
+
+      <a href="CV_AbdulRahmanYusup.pdf" class="btn" target="_blank">Download CV</a>
+    </div>
+  </div> <!-- penutup profile-card -->
+  <!-- SECTION EDUCATION -->
+<section id="education" class="education-section fade-in">
+  <h2>Education</h2>
+  <p>Riwayat pendidikan yang saya tempuh selama perjalanan karier.</p>
+
+  <div class="edu-container">
+
+    <div class="edu-box">
+      <h3>SMK</h3>
+      <p>Multimedia.</p>
+      <span class="edu-year">2015 – 2018</span>
+    </div>
+
+    <div class="edu-box">
+      <h3>S1</h3>
+      <p>Teknik Informatika.</p>
+      <span class="edu-year">2018 – 2022</span>
+    </div>
+
+  </div>
+</section>
+<section id="experience" class="experience-section fade-in">
+  <h2>Experience</h2>
+  <p>Berikut adalah pengalaman kerja dan kegiatan profesional saya.</p>
+
+  <div class="experience-container">
+
+    <div class="experience-box">
+      <h3>Guru TIK</h3>
+      <span class="exp-year">2023 - 2025</span>
+      <p>Pernah menjadi Guru TIK di SD Negri Pondok Ranji 04. Mengajar 16 Kelas dalam 1 Semester membuat saya sangat mampu berbicara di depan umum dengan baik.</p>
+    </div>
+
+    <div class="experience-box">
+      <h3>Staff Administrasi</h3>
+      <span class="exp-year">2025 - Sekarang</span>
+      <p>Input data, pengolahan laporan, dan membantu kebutuhan teknis kantor di salah satu Universitas Ternama yaitu Universitas Pamulang (UNPAM)</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills" class="skills-section fade-in">
+  <h2>Skill Saya</h2>
+  <p>Berikut adalah beberapa kemampuan teknis yang sering saya gunakan dalam pekerjaan profesional.</p>
+
+  <div class="skills-container">
+
+    <div class="skill-box">
+      <img src="image/microsoft.png" alt="Microsoft Office">
+      <h3>Microsoft Office</h3>
+      <p>Kemampuan administrasi kantor dengan Microsoft Office.</p>
+    </div>
+
+    <div class="skill-box">
+      <img src="image/adobee.png" alt="Adobe">
+      <h3>Adobe</h3>
+      <p>Menguasai aplikasi Adobe untuk kebutuhan desain.</p>
+    </div>
+
+    <div class="skill-box">
+      <img src="image/canva.jpg" alt="Canva">
+      <h3>Canva</h3>
+      <p>Desain grafis dengan Canva untuk media sosial dan pemasaran.</p>
+    </div>
+
+    <div class="skill-box">
+      <img src="image/capcut.png" alt="Capcut">
+      <h3>Capcut</h3>
+      <p>Pengeditan video dengan Capcut untuk konten kreatif.</p>
+    </div>
+
+    <div class="skill-box">
+      <img src="image/itsup.png" alt="IT Support">
+      <h3>IT Support</h3>
+      <p>Penguasaan IT untuk meningkatkan efisiensi.</p>
+    </div>
+
+    <div class="skill-box">
+      <img src="image/time.png" alt="MySQL">
+      <h3>Time management</h3>
+      <p>Manajemen waktu yang strategis untuk meningkatkan efisiensi dan kinerja.</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Section kontak HARUS di luar profile-card -->
+  <section id="contact" class="contact-section fade-in">
+    <h2>Kontak Saya</h2>
+    <p>Silakan kirim pesan atau pertanyaan melalui formulir di bawah ini:</p>
+
+    <form action="mailto:aabcrd2@gmail.com" method="post" enctype="text/plain" class="contact-form">
+  <div class="form-group">
+    <label for="name">Nama</label>
+    <input type="text" id="name" name="Nama" placeholder="Nama lengkap Anda" required>
+  </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" placeholder="Alamat email Anda" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Pesan</label>
+      <textarea id="message" name="Pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Kirim Pesan</button>
+</form>
+<!-- Bagian info kontak dan media sosial -->
+<div class="contact-info">
+  <h3>Atau hubungi saya melalui:</h3>
+  <ul class="social-links">
+    <li><a href="mailto:aabcrd2@gmail.com" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail"> aabcrd2@gmail.com
+    </a></li>
+    <li><a href="https://wa.me/6289653573698" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"> +62 896-5357-3698
+    </a></li>
+    <li><a href="https://www.instagram.com/aabbbbbb0" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"> @aabbbbbb0
+    </a></li>
+  </ul>
+</div>
+
+  </section>
+</main>
+
+
+  <footer>
+    <p>© 2025 Abdul Rahman Yusup. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
